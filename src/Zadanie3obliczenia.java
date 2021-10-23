@@ -6,15 +6,11 @@ public class Zadanie3obliczenia {
 
     private float delta;
 
-    public SquareEquastionSolver(float a, float b, float c) {
+    public Zadanie3obliczenia(float a, float b, float c) {
         this.a = a;
         this.b = b;
         this.c = c;
-        calculateDelta();
-    }
-
-    private void calculateDelta(){
-        this.delta = 0;
+        this.delta = (float) Math.pow(b,2) - 4 * a * c;
     }
 
     public Float cacluateX1(){
