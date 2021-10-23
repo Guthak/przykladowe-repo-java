@@ -5,16 +5,15 @@ public class Zadanie3 {
 
     public static void main(String[] args) {
 
-        System.out.println("Podaj wartość A");
-        Scanner yoursA = new Scanner(System.in);
+    Scanner yoursScanner = new Scanner(System.in);
 
-        System.out.println("Podaj wartość B");
-        Scanner yoursB = new Scanner(System.in);
+    float a = yoursScanner.nextFloat();
+        float b = yoursScanner.nextFloat();
+        float c = yoursScanner.nextFloat();
 
-        System.out.println("Podaj wartość C");
-        Scanner yoursC = new Scanner(System.in);
+       Zadanie3obliczenia obliczenie = new Zadanie3obliczenia(a, b, c);
 
-       Zadanie3obliczenia = new Zadanie3obliczenia(a, b, c)
+       Float x1 = obliczenie.cacluateX1();
 
 
 

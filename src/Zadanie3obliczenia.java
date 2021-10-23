@@ -17,20 +17,22 @@ public class Zadanie3obliczenia {
         if (delta < 0) {
             return null;
         } else {
-            double x1 = -b - Math.sqrt(delta) / 2 * a;
+            float x1 = (float) (-b - Math.sqrt(delta) / 2 * a);
+            return x1;
         }
+    }
 
-
-        public Float calcualteX2;
-        {
-            if (delta < 0) {
-                return null;
-            } else {
-                double x2 = -b + Math.sqrt(delta) / 2 * a;
-            }
+    public Float calcualteX2() {
+        if (delta < 0) {
+            return null;
+        } else {
+            float x2 = (float) (-b + Math.sqrt(delta) / 2 * a);
+            return x2;
         }
     }
 }
+
+
 
 
 
