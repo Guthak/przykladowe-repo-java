@@ -9,7 +9,7 @@ public class Zadanie2 {
         System.out.println("Podaj swoją wagę");
         Scanner waga = new Scanner(System.in);
 
-        Float twojaWaga = waga.nextFloat();
+        float twojaWaga = waga.nextFloat();
 
         System.out.println("Podaj swój wzrost w cm");
         Scanner wzrost = new Scanner(System.in);
