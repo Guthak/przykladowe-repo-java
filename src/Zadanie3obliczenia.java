@@ -10,20 +10,27 @@ public class Zadanie3obliczenia {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.delta = (float) Math.pow(b,2) - 4 * a * c;
+        this.delta = (float) Math.pow(b, 2) - 4 * a * c;
     }
 
-    public Float cacluateX1(){
-        if(delta < 0){
+    public Float cacluateX1() {
+        if (delta < 0) {
             return null;
-        }else {
-
+        } else {
+            double x1 = -b - Math.sqrt(delta) / 2 * a;
         }
-        return null;
-    }
 
-    public Float calcualteX2(){
-        return 0.0f;
+
+        public Float calcualteX2;
+        {
+            if (delta < 0) {
+                return null;
+            } else {
+                double x2 = -b + Math.sqrt(delta) / 2 * a;
+            }
+        }
     }
 }
+
+
 
