@@ -26,4 +26,4 @@ public class Zadanie3obliczenia {
         return 0.0f;
     }
 }
-}
+
