@@ -22,7 +22,7 @@ public class Zadanie7 {
 
             System.out.print(sum + " ");
         }
-
+// czemu nie daje mi pierwszej liczby
 
     }
 }
