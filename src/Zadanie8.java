@@ -7,7 +7,7 @@ public class Zadanie8 {
 
 
         System.out.println("Podaj pierwszą liczbę");
-        Scanner userNumber1 = new Scanner (System.in);
+        Scanner userNumber1 = new Scanner(System.in);
         int number1 = userNumber1.nextInt();
 
         System.out.println("Podaj znak działania");
@@ -15,7 +15,7 @@ public class Zadanie8 {
         String sign = userSign.next();
 
         System.out.println("Podaj drugą liczbę");
-        Scanner userNumber2 = new Scanner (System.in);
+        Scanner userNumber2 = new Scanner(System.in);
         int number2 = userNumber2.nextInt();
 
         int sum;
@@ -23,20 +23,25 @@ public class Zadanie8 {
 
         if (sign.equals("+")) {
             sum = number1 + number2;
+            System.out.println(sum);
         } else if (sign.equals("-")) {
             sum = number1 - number2;
-        } else if (sign.equals("*")){
+            System.out.println(sum);
+        } else if (sign.equals("*")) {
             sum = number1 * number2;
+            System.out.println(sum);
         } else if (sign.equals("/")) {
-            sum = number1 / number2;
+            if (number2 != 0) {
+                sum = number1 / number2;
+                System.out.println(sum);
+            } else
+                System.out.println("Błędne działanie");
+
+
         } else
-            System.out.println("Błędny znak");
-
-
-
+            System.out.println("Nieprawidłowy znak");
 
 
     }
-
-
 }
+
