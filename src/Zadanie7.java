@@ -8,12 +8,16 @@ public class Zadanie7 {
 
         Scanner scanner = new Scanner(System.in);
         int fibonacci = scanner.nextInt();
-        int a = 0;
+        int a = 1;
         int b = 1;
 
 
         int i = 1;
-        while (i <= fibonacci) {
+
+        System.out.print(a + " ");
+        System.out.print(b + " ");
+
+        while (i <= fibonacci - 2) {
 
             int sum = a + b;
             a = b;
