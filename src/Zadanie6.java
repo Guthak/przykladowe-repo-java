@@ -9,7 +9,7 @@ public class Zadanie6 {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
-        float sum = 1;
+        float sum = 0;
         for (int i = 1; i <= number; i++) {
             sum = sum + 1 / (float) i;
         }
